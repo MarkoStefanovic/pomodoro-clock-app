@@ -116,7 +116,7 @@ $('#stop').on('click' , function(){
 
 $('#radio-list').on('change', function(){
     var num = this.value;
-    var list = ['https://www.dropbox.com/s/z15jlz9i11lpqd4/ambient.mp3?raw=1','https://www.dropbox.com/s/z15jlz9i11lpqd4/drummnbass.mp3?raw=1'];
+    var list = ['https://www.dropbox.com/s/z15jlz9i11lpqd4/ambient.mp3?raw=1','https://www.dropbox.com/s/pa5j0w5eynbihbf/drumnbass.mp3?raw=1'];
     radio.src = list[num];
     loadRadio();
     console.log('radio src: ' + radio.src);
