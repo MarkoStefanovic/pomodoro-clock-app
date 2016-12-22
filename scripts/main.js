@@ -6,7 +6,7 @@ var t;
 var workTime = 25;
 var breakTime = 5;
 var alarm = document.createElement('audio');
-alarm.src = '/pomodoro-clock-app/sounds/alarm.mp3';
+alarm.src = 'sounds/alarm.mp3';
 
 var radio = document.createElement('audio');
 radio.src = 'https://www.dropbox.com/s/z15jlz9i11lpqd4/ambient.mp3?raw=1';
