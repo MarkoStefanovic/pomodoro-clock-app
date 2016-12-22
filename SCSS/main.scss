@@ -1,0 +1,318 @@
+// bower:scss
+// endbower
+
+
+/* ############ COLORS  ############## */
+$onyx : #3A3545;
+$maya-blue: #6CCFF6;
+$tea-green: #CBEAA6;
+$sunset-orange: #FE5F55;
+$jelly-bean: #DB504A;
+$blue:#15182D;
+$gray:#ebebeb;
+/* ############ END/COLORS  ############## */
+
+/* ############ TYPOGRAPHY  ############## */
+h1{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a{
+  color: $sunset-orange;
+  text-decoration: none;
+  outline: none;
+  &:hover,&:focus,&:active{
+    color: $jelly-bean;
+  }
+}
+/* ############ END/TYPOGRAPHY  ############## */
+
+/* ############ BUTTONS  ############## */
+.btn{
+  //line-height: 55px;
+  padding:20px;
+  border-radius:100%;
+  border: 1px solid $gray;
+  background: transparent;
+  color: $gray;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  &:hover,&:focus{
+    color: $sunset-orange;
+    border-color: $sunset-orange;
+  }
+  &:active{
+    color: $jelly-bean;
+    border-color: $jelly-bean;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.smlBtn{
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $gray;
+  border-radius:100%;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  &:hover,&:focus{
+    color: $sunset-orange;
+    border-color: $sunset-orange;
+  }
+  &:active{
+    color: $jelly-bean;
+    border-color: $jelly-bean;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+/* ############ END/BUTTONS  ############## */
+
+
+body{
+  background: #3A3545;
+  color: $gray;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.green{
+  color: $tea-green;
+}
+.blue{
+  color: $maya-blue;
+}
+
+.red{
+  color: $jelly-bean;
+}
+.container{
+  margin: 20px auto 0 auto;
+//  display: block;
+text-align: center;
+  width: 300px;
+  min-height: 480px;
+  background: #3A3545;
+background: -webkit-radial-gradient(#575065, #3A3545); /* Safari 5.1 to 6.0 */
+background: -o-radial-gradient(#575065, #3A3545 ); /* For Opera 11.6 to 12.0 */
+background: -moz-radial-gradient(#575065, #3A3545); /* For Firefox 3.6 to 15 */
+background: radial-gradient(#575065, #3A3545); /* Standard syntax */
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.clear{
+  clear: both;
+}
+#output{
+  font-size: 60px;
+  padding: 5px;
+}
+
+
+.timer{
+  font-size: 25px;
+  float: left;
+  padding: 0 10px 10px 15px;
+
+  #timer-input{
+    padding: 10px;
+  }
+
+}
+
+.break{
+  font-size: 25px;
+  padding: 0 10px 10px 10px;
+
+  #break-input{
+    padding: 10px;
+  }
+}
+
+
+
+p{
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.buttons{
+  padding: 10px;
+  button{
+    margin: 5px;
+  }
+}
+
+.slider{
+
+  span{
+    float: left;
+    margin-left: 34px;
+    padding-top: 12px;
+  }
+  #volume{
+    padding-top: 2px;
+    width: 150px;
+    float: right;
+    margin-right: 35px;
+  }
+
+}
+
+.select{
+  span{
+    float: left;
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+}
+
+ select{
+   float: right;
+   margin: 15px 35px 0 0;
+  background:#ebebeb  url('/pomodoro-clock-app/images/arrow.png') no-repeat 90% 50%;
+  padding: 5px 68px 5px 5px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:active, &:hover, &:focus{
+    background:#575065  url('/pomodoro-clock-app//images/arrow.png') no-repeat 90% 50%;
+  }
+}
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/*+++++++++++++++++++++++++++++*/
+
+$track-color: #ebebeb !default;
+$thumb-color: #3A3545 !default;
+
+$thumb-radius: 50px !default;
+$thumb-height: 30px !default;
+$thumb-width: 30px !default;
+$thumb-shadow-size: 0px !default;
+$thumb-shadow-blur: 0px !default;
+$thumb-shadow-color: #111 !default;
+$thumb-border-width: 1px !default;
+$thumb-border-color: #ebebeb !default;
+
+$track-width: 100% !default;
+$track-height: 10px !default;
+$track-shadow-size: 0px !default;
+$track-shadow-blur: 0px !default;
+$track-shadow-color: #222 !default;
+$track-border-width: 0px !default;
+$track-border-color: #000 !default;
+
+$track-radius: 0px !default;
+$contrast: 5% !default;
+
+@mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
+}
+
+@mixin track() {
+  width: $track-width;
+  height: $track-height;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+@mixin thumb() {
+  @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
+  border: $thumb-border-width solid $thumb-border-color;
+  height: $thumb-height;
+  width: $thumb-width;
+  border-radius: $thumb-radius;
+  background: $thumb-color;
+  cursor: pointer;
+}
+input{
+  background: transparent;
+}
+[type=range] {
+  -webkit-appearance: none;
+  margin: $thumb-height / 2 0;
+  width: $track-width;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include track();
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb();
+    -webkit-appearance: none;
+    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: lighten($track-color, $contrast);
+  }
+
+  &::-moz-range-track {
+    @include track();
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb();
+  }
+
+  &::-ms-track {
+    @include track();
+    background: transparent;
+    border-color: transparent;
+    border-width: $thumb-width 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: darken($track-color, $contrast);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+  }
+
+  &::-ms-fill-upper {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+  }
+
+  &::-ms-thumb {
+    @include thumb();
+  }
+
+  &:focus::-ms-fill-lower {
+    background: $track-color;
+  }
+
+  &:focus::-ms-fill-upper {
+    background: lighten($track-color, $contrast);
+  }
+}

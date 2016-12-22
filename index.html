@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro Timer App</title>
+
+  <link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Pomodoro clock</h1>
+    </header>
+    <main>
+      <div id="main-output">
+        <span id="work-output">WORK TIME</span>
+        <div id="output">00:00</div>
+      </div>
+      <div class="timer">
+        <p>work time</p>
+        <span id="timer-decrease" class="smlBtn"><i class="fa fa-arrow-left"></i></span>
+        <span id="timer-input">25</span>
+        <span id="timer-increase" class="smlBtn"><i class="fa fa-arrow-right"></i></span>
+      </div>
+      <div class="break">
+        <p>break time</p>
+        <span id="break-decrease" class="smlBtn"><i class="fa fa-arrow-left"></i></span>
+        <span id="break-input">05</span>
+        <span id="break-increase" class="smlBtn"><i class="fa fa-arrow-right"></i></span>
+      </div>
+      <div class="buttons">
+        <button id="start" class="btn"><i class="fa fa-play fa-lg"></i></button>
+        <button id="stop" class="btn" disabled><i class="fa fa-stop fa-lg" ></i></button>
+        <div class="clear"></div>
+      </div>
+      <div class="slider">
+        <span>volume</span>
+        <input id="volume" type="range" min="0" max="100" step="5" value="20">
+        <div class="clear"></div>
+      </div>
+      <div class="select">
+        <span>radio list</span>
+        <select id="radio-list" name="select">
+            <option value="0">Ambient</option>
+            <option value="1">DrumNBass</option>
+          </select>
+      </div>
+      <div class="clear"></div>
+    </main>
+
+  </div>
+
+
+  <footer>
+    <p class="page-author">Coded and designed by <br/><a href="http://markostefanovic.github.io/" class="link brackets" target="_blank">Marko Stefanovic</a><br/>for FreeCodeCamp © 2016</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

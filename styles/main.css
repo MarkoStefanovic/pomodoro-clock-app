@@ -1,0 +1,291 @@
+/* ############ COLORS  ############## */
+/* ############ END/COLORS  ############## */
+/* ############ TYPOGRAPHY  ############## */
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #FE5F55;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #DB504A;
+}
+
+/* ############ END/TYPOGRAPHY  ############## */
+/* ############ BUTTONS  ############## */
+.btn {
+  padding: 20px;
+  border-radius: 100%;
+  border: 1px solid #ebebeb;
+  background: transparent;
+  color: #ebebeb;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.btn:hover, .btn:focus {
+  color: #FE5F55;
+  border-color: #FE5F55;
+}
+
+.btn:active {
+  color: #DB504A;
+  border-color: #DB504A;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.smlBtn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-radius: 100%;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.smlBtn:hover, .smlBtn:focus {
+  color: #FE5F55;
+  border-color: #FE5F55;
+}
+
+.smlBtn:active {
+  color: #DB504A;
+  border-color: #DB504A;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ############ END/BUTTONS  ############## */
+body {
+  background: #3A3545;
+  color: #ebebeb;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.green {
+  color: #CBEAA6;
+}
+
+.blue {
+  color: #6CCFF6;
+}
+
+.red {
+  color: #DB504A;
+}
+
+.container {
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 300px;
+  min-height: 480px;
+  background: #3A3545;
+  background: -webkit-radial-gradient(#575065, #3A3545);
+  /* Safari 5.1 to 6.0 */
+  /* For Opera 11.6 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#575065, #3A3545);
+  /* Standard syntax */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.clear {
+  clear: both;
+}
+
+#output {
+  font-size: 60px;
+  padding: 5px;
+}
+
+.timer {
+  font-size: 25px;
+  float: left;
+  padding: 0 10px 10px 15px;
+}
+
+.timer #timer-input {
+  padding: 10px;
+}
+
+.break {
+  font-size: 25px;
+  padding: 0 10px 10px 10px;
+}
+
+.break #break-input {
+  padding: 10px;
+}
+
+p {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.buttons button {
+  margin: 5px;
+}
+
+.slider span {
+  float: left;
+  margin-left: 34px;
+  padding-top: 12px;
+}
+
+.slider #volume {
+  padding-top: 2px;
+  width: 150px;
+  float: right;
+  margin-right: 35px;
+}
+
+.select span {
+  float: left;
+  margin-left: 20px;
+  margin-top: 14px;
+}
+
+select {
+  float: right;
+  margin: 15px 35px 0 0;
+  background: #ebebeb url("/pomodoro-clock-app/images/arrow.png") no-repeat 90% 50%;
+  padding: 5px 68px 5px 5px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select:active, select:hover, select:focus {
+  background: #575065 url("/pomodoro-clock-app/images/arrow.png") no-repeat 90% 50%;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*+++++++++++++++++++++++++++++*/
+input {
+  background: transparent;
+}
+
+[type=range] {
+  -webkit-appearance: none;
+  margin: 15px 0;
+  width: 100%;
+}
+
+[type=range]:focus {
+  outline: none;
+}
+
+[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+  background: #ebebeb;
+  border: 0px solid #000;
+  border-radius: 0px;
+}
+
+[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+  border: 1px solid #ebebeb;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background: #3A3545;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+[type=range]:focus::-webkit-slider-runnable-track {
+  background: #f8f8f8;
+}
+
+[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+  background: #ebebeb;
+  border: 0px solid #000;
+  border-radius: 0px;
+}
+
+[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+  border: 1px solid #ebebeb;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background: #3A3545;
+  cursor: pointer;
+}
+
+[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  background: transparent;
+  border-color: transparent;
+  border-width: 30px 0;
+  color: transparent;
+}
+
+[type=range]::-ms-fill-lower {
+  box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+  background: #dedede;
+  border: 0px solid #000;
+  border-radius: 0px;
+}
+
+[type=range]::-ms-fill-upper {
+  box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+  background: #ebebeb;
+  border: 0px solid #000;
+  border-radius: 0px;
+}
+
+[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+  border: 1px solid #ebebeb;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background: #3A3545;
+  cursor: pointer;
+}
+
+[type=range]:focus::-ms-fill-lower {
+  background: #ebebeb;
+}
+
+[type=range]:focus::-ms-fill-upper {
+  background: #f8f8f8;
+}
