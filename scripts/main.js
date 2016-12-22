@@ -9,7 +9,7 @@ var alarm = document.createElement('audio');
 alarm.src = 'pomodoro-clock-app/sounds/alarm.mp3';
 
 var radio = document.createElement('audio');
-radio.src = 'pomodoro-clock-app/sounds/ambient.mp3';
+radio.src = 'https://www.dropbox.com/s/z15jlz9i11lpqd4/ambient.mp3?dl=0';
 radio.volume = 0.2;
 
 function timer(minutes) {
@@ -116,7 +116,7 @@ $('#stop').on('click' , function(){
 
 $('#radio-list').on('change', function(){
     var num = this.value;
-    var list = ['pomodoro-clock-app/sounds/ambient.mp3','pomodoro-clock-app/sounds/drumnbass.mp3'];
+    var list = ['https://www.dropbox.com/s/z15jlz9i11lpqd4/ambient.mp3?dl=0','https://www.dropbox.com/s/z15jlz9i11lpqd4/drummnbass.mp3?dl=0'];
     radio.src = list[num];
     loadRadio();
     console.log('radio src: ' + radio.src);
